@@ -359,6 +359,10 @@ menuitem:focus-visible {
 
 @media screen and (max-width: 650px) {
 
+    .wrapper {
+        padding: 0 1rem;
+    }
+
     .primary-navigation {
         background-color: var(--neutral-col-100);
         position: absolute;

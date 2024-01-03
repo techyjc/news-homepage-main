@@ -50,6 +50,10 @@ img {
     min-width: 340px;
 }
 
+.logo {
+    padding-left: 3rem;
+}
+
 .mast-head {
     padding: 3rem 0rem;
     align-items: center;

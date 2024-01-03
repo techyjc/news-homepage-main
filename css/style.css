@@ -66,11 +66,11 @@ nav {
 }
 
 .primary-navigation {
+    background-color: var(--neutral-col-100);
     display: flex;
     flex-direction: row;
-    gap: 1rem;
     list-style: none;
-    margin: 0px;
+    gap: 1.5rem;
     padding: 1rem 1rem;
     position: relative;
 }
@@ -81,21 +81,13 @@ nav {
     width: 30px;
 }
 
-.navmenu {
-    font-size: 0.9rem;
-    ;
-    display: flex;
-    list-style: none;
-    gap: 1rem;
-}
-
 .menuitem {
     color: var(--neutral-col-400);
     text-decoration: none;
 }
 
 .menuitem:hover,
-menuitem:focus-visible {
+.menuitem:focus-visible {
     color: var(--primary-col-200);
 }
 
@@ -309,11 +301,6 @@ menuitem:focus-visible {
         grid-area: interest
     }
 
-
-    .primary-navigation {
-        display: flex;
-    }
-
     .hero-section {
         display: grid;
         grid-template-columns: 1fr;
@@ -365,11 +352,23 @@ menuitem:focus-visible {
     }
 
     .primary-navigation {
-        background-color: var(--neutral-col-100);
+        display: block;
         position: absolute;
-        inset: 0px 0px 0px 10rem;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 10rem;
+        /* inset: 0px 0px 0px 10rem; */
         flex-direction: column;
         z-index: 1;
+    }
+
+    .primary-navigation li {
+        margin: 3rem 5rem 0rem 3rem;
+    }
+
+    .primary-navigation li:first-of-type {
+        margin-top: 14rem;
     }
 
     .primary-navigation[aria-expanded='true'] {
@@ -402,6 +401,11 @@ menuitem:focus-visible {
         background-position: top left;
         background-size: 30px 30px;
         background-repeat: no-repeat;
+    }
+
+    .menutitem {
+        display: inline-block;
+        margin-top: 3rem;
     }
 }
 

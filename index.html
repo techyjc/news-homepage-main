@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+  <main class="wrapper">
+    <header class="mast-head">
+      <div class="logo">
+        <img src="./assets/images/logo.svg" alt="W Logo">
+      </div>
+      <div class="navbuttons open">
+        <!-- <img class="menu-open" src="./assets/images/icon-menu.svg" alt="Menu Opened">
+        <img class="menu-close" src="./assets/images/icon-menu-close.svg" alt="Menu Closed"> -->
+      </div>
+      <ul class="primary-navigation" aria-expanded="false">
+        <li><a href="" class="menuitem">Home</a></li>
+        <li><a href="" class="menuitem">New</a></li>
+        <li><a href="" class="menuitem">Popular</a></li>
+        <li><a href="" class="menuitem">Trending</a></li>
+        <li><a href="" class="menuitem">Categories</a></li>
+      </ul>
+    </header>
+
+    <section class="hero-section">
+      <picture class="hero-image">
+        <source media="(min-width: 999px)" srcset="./assets/images/image-web-3-desktop.jpg">
+        <source media="(max-width: 1000px)" srcset="./assets/images/image-web-3-mobile.jpg">
+        <img src="assets/images/image-web-3-desktop-mobile.jpg" alt="">
+      </picture>
+
+
+      <div class="hero-content">
+        <h1 class="hero-head">The Bright Future of Web 3.0?</h1>
+        <p class="hero-copy">
+          We dive into the next evolution of the web that claims to put the power of the platforms
+          back into the hands of the people. But is it really fulfilling its promise?<br><a href="#"
+            class="hero-action">Read more</a>
+        </p>
+
+      </div>
+    </section>
+
+    <section class="news-articles">
+      <h2 class="news-head">New</h2>
+      <article class="news-feature">
+        <h2 class="news-subhead">Hydrogen VS Electric Cars</h2>
+        <p class="news-text">Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </article>
+      <article class="news-feature">
+        <h2 class="news-subhead">The Downsides of AI Artistry</h2>
+        <p class="news-text">What are the possible adverse effects of on-demand AI image generation?</p>
+      </article>
+      <article class="news-feature">
+        <h2 class="news-subhead">Is VC Funding Drying Up?</h2>
+        <p class="news-text"> Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </article>
+    </section>
+
+    <section class="interest-articles">
+      <div class="interest-item">
+        <img src="./assets/images/image-retro-pcs.jpg" alt="Reviving Retro PCs">
+        <div class="interest-sub-content">
+          <span class="interest-item-no">01</span>
+          <span class="interest-item-head">Reviving Retro PCs</span>
+          <span class="interest-item-text"> What happens when old PCs are given modern upgrades?</span>
+        </div>
+      </div>
+      <div class="interest-item">
+        <img src="./assets/images/image-top-laptops.jpg" alt="Top 10 Laptops of 2022">
+        <div class="interest-sub-content">
+          <span class="interest-item-no">02</span>
+          <span class="interest-item-head">Top 10 Laptops of 2022</span>
+          <span class="interest-item-text">Our best picks for various needs and budgets.</span>
+        </div>
+      </div>
+      <div class="interest-item">
+        <img src="./assets/images/image-gaming-growth.jpg" alt="The Growth of Gaming">
+        <div class="interest-sub-content">
+          <span class="interest-item-no">03</span>
+          <span class="interest-item-head">The Growth of Gaming</span>
+          <span class="interest-item-text">How the pandemic has sparked fresh opportunities.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
